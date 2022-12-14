@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parking Lot</title>
+</head>
+
+<body>
+    <table border="1">
+        {% for data in datas %}
+        <tr>
+            <td bgcolor={{color[data]}}>{{ data }}</td>
+            <td>{{ datas[data] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>
